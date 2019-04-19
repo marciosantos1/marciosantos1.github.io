@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang ="pt-br">
+    <head>
+        <meta charset="utf-8">
+
+        <title>CSS Basico</title>>
+        <style>
+         
+            @import url('https://fonts.googleapis.com/css?family=Lalezar|Open+Sans|Roboto');
+
+
+
+         /*seletores de elementos*/
+
+
+         body{
+
+         	background-color: #272822;
+         	 color: rgb(248,248,242);
+             font-family: monospace;
+
+}
+           h1,h2{
+
+           	color: rgba(249,38,76);
+           	font-family: serif;
+            font-family: 'Lalezar', cursive;
+            text-align: justify;
+           }  
+
+             /*Pseudo Classe*/
+
+         main  p:nth-of-type(2n){
+             	background-color: deepskyblue;
+             	color: deeppink;
+         }        	
+
+        main   p:nth-of-type(2n+1){
+              background-color: yellow;
+              color: brown;
+
+             }
+
+             h1:hover{
+
+             	background-color: white;
+             	border: 2xp lightgreen solid;
+             	width: fit-content;
+
+             }
+            /*Seletor de classe / Classificação*/        
+            
+       
+/*Ultilizasse ponto . para a classe*/   
+      
+
+
+
+       /*Classe caixa*/      
+.caixa{
+   
+   width: 600px;
+   height: 200px;
+   border: 4px yellow ridge;
+   margin: 0 auto;
+   padding: 30px 40px;
+   
+
+/*Classe circuloo*/   
+
+}
+.circulo{
+
+  width: 200px;
+  height: 200px;
+  border: 2px dotted white;
+  border-radius: 50%;/*Arredondamento*/
+  float: left; /*Uma do Lado da outra*/     
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 50px;
+}
+.circulo:hover{box-shadow: 0 0 10px yellow}
+
+/*Classe sombra */   
+
+.sombra {
+box-shadow: 5px 5px 10px white;
+border-radius: 10px;
+}
+span{font-weight: bold;
+color: red;
+}
+#principal{background-color: black;}
+#primeiro {background-color: rgba(255,0,0,0.3);}
+#segunda{background-color: rgba(0,255,0,0.3);}
+#terceiro{background-color: rgba(255,0,0,0.3);}
+
+
+        </style>>
+
+
+    </head>
+    <body>
+
+
+
+
+ <h1>Olá Mundo Maravilhoso</h1>
+
+<div id="principal" class="caixa  sombra">
+	
+	
+<div id="primeiro" class="circulo">
+<p>Conteúdo <span>1º DIV </span></p>
+
+</div>
+
+<div id="segunda" class="circulo">
+
+<p>Conteúdo <span>2ºDIV<</span></p>
+</div>
+
+<div id="terceiro" class="circulo">
+
+<p>Conteúdo <span>3ºDIV</span></p>
+
+</div>
+
+
+
+
+</div>
+
+<main>
+
+        <h2>Primeiro Paragrafo</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque dui ac nisi efficitur pretium. Vestibulum pellentesque turpis quis felis elementum, ut rhoncus velit vehicula. Curabitur sed vestibulum mi, a dignissim augue. Vestibulum tempus facilisis ligula, ac maximus dolor laoreet in. Proin interdum turpis at auctor cursus. Etiam at cursus neque. Quisque quis iaculis odio, sit amet volutpat ante. Maecenas tristique rhoncus nisl, sed luctus mauris imperdiet eu. Aliquam varius aliquam ipsum nec eleifend. Maecenas dignissim ante eget enim bibendum suscipit. Curabitur non mollis neque, nec rhoncus urna. Vivamus condimentum, quam posuere luctus vestibulum, nulla tortor accumsan diam, vitae euismod orci nibh ac neque. Mauris euismod eu ante sit amet gravida. Nulla eu lacinia tortor. Vestibulum lectus nisi, eleifend ac nunc a, vulputate imperdiet turpis.</p>
+
+
+ <h2>Segundo Paragrafo</h2>
+ <p>Aenean lectus tellus, aliquam vitae velit at, tincidunt lacinia metus. Suspendisse feugiat justo in commodo porta. Morbi commodo ex augue, et tincidunt urna ornare in. Mauris nec convallis tellus, non imperdiet tellus. Duis ullamcorper, enim sed ultricies dignissim, leo sem ullamcorper mi, ac porttitor tellus massa sed nisi. Sed fermentum tellus nec ex laoreet bibendum. Etiam posuere risus sed risus congue porttitor. Fusce risus risus, posuere sed elit eu, blandit sollicitudin nibh. Quisque a ornare nibh. Aliquam sit amet rutrum lorem, in ullamcorper ante. Mauris sed libero lorem. Vestibulum in gravida nunc. Maecenas sit amet metus eu purus semper dapibus.</p>
+
+  <h2>Terceiro Paragrafo</h2>
+ <p>Quisque porta viverra nibh, at egestas nunc vehicula sed. Cras ornare mollis dolor, sit amet elementum ante consectetur eu. Sed ultrices, quam at facilisis commodo, mauris tellus elementum mauris, ac posuere odio ligula sed nibh. Praesent dignissim finibus mollis. Sed non mi cursus, porttitor ligula sed, viverra mi. Nullam quis feugiat nibh. Nullam et laoreet ex. Praesent suscipit, velit imperdiet tincidunt cursus, diam felis interdum massa, id auctor ante arcu ac arcu. Morbi rhoncus sed ipsum finibus rhoncus. Aliquam volutpat nibh vitae velit auctor, nec mollis justo interdum.</p>
+
+ <h2>Quarto Paragrafo</h2>
+ <p>Mauris sed iaculis tortor, eget euismod metus. Maecenas eget condimentum lectus. Integer dictum sit amet lacus sit amet egestas. Vivamus malesuada, leo in congue congue, nisl dolor suscipit odio, maximus euismod ipsum neque eget dui. Morbi pulvinar vitae ex et suscipit. Nullam dapibus purus eget dui semper ornare. Integer ut bibendum urna, accumsan ullamcorper lacus. Integer vehicula consectetur purus in cursus. Proin rutrum rutrum tortor sed maximus. Maecenas justo mi, sodales vel hendrerit ac, vulputate a arcu. Maecenas dui ante, pulvinar bibendum nibh id, commodo aliquet mauris. Sed sed dui porttitor, dictum odio et, convallis ante. Nullam tempor mattis vulputate. Nam convallis lacus facilisis, pellentesque nisi ac, ultrices nisi. Etiam pellentesque finibus nibh, at varius ex rhoncus vel.</p>
+
+ <h2>Quinto Paragrafo</h2>
+ <p>Duis luctus ante nibh, at malesuada sem bibendum auctor. Fusce quis enim non eros commodo dapibus vitae ut mi. Cras lacinia tristique ultricies. Morbi sed vulputate orci. Phasellus tortor ipsum, fringilla ut faucibus ut, porttitor sodales ligula. Donec ac velit arcu. Sed eget dui a massa vestibulum rutrum ac in orci. Phasellus a dictum nibh, ac consectetur ante. Quisque posuere, odio in malesuada rhoncus, nunc neque fringilla felis, et maximus libero nunc vel augue. Donec ut nunc non justo luctus bibendum.</p>
+
+ <h2>Sexto Paragrafo</h2>
+ <p>Maecenas ac ullamcorper nisi, nec rhoncus felis. Maecenas sed congue ipsum, a commodo massa. Etiam lectus magna, feugiat faucibus condimentum non, molestie porttitor eros. Pellentesque aliquet, nisi sed malesuada malesuada, metus lectus elementum turpis, id faucibus lectus risus ac nisl. Praesent sed erat ultricies, posuere erat nec, bibendum lorem. Morbi malesuada massa risus, eget ultricies tellus interdum eget. Donec posuere tortor eget ornare vehicula. Aenean eget elit vitae magna auctor commodo id nec nulla.</p>
+
+ <h2>Sétimo Paragrafo</h2>
+ <p>Suspendisse posuere ullamcorper vulputate. Proin eu nunc hendrerit, elementum dolor et, sagittis nibh. Nulla tristique leo libero, non volutpat neque tempus sit amet. Quisque scelerisque neque lorem, cursus lobortis tellus euismod non. Aenean iaculis quam vitae rhoncus rhoncus. In hac habitasse platea dictumst. Cras interdum in libero in placerat. Nam eu rhoncus lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tempor cursus. Aliquam tempus fringilla augue, non tempus ipsum luctus in. Donec pretium, nisi vitae viverra scelerisque, diam lorem tincidunt erat, posuere molestie diam nibh nec arcu.
+
+ <h2>Oitavo Parágrafo</h2>
+ <p>Phasellus vulputate ligula semper aliquet varius. Praesent sit amet tortor mauris. Curabitur sit amet tellus nisl. Nam euismod, dui eget facilisis egestas, metus justo mollis sapien, non eleifend elit purus venenatis arcu. Mauris quis nibh at neque sodales pellentesque at a ipsum. Fusce viverra quam tellus, ac commodo libero eleifend sit amet. Pellentesque elit nisl, scelerisque sed vulputate a, egestas in mauris. Nulla vel nisi nec nunc aliquam tristique. Pellentesque congue, lorem at dapibus pulvinar, ipsum nibh finibus dui, non mattis tellus orci nec risus. Morbi id pellentesque nisl.</p>
+
+ <h2>Nono Parágrafo</h2>
+ <p>Proin et sodales turpis. Fusce sed orci porttitor, dignissim massa et, fermentum libero. Donec laoreet magna fermentum arcu consectetur, non tempor erat volutpat. Aenean pharetra urna sapien, vitae efficitur elit vulputate nec. Ut hendrerit mattis turpis, sit amet mollis dolor fermentum in. Aenean feugiat ligula ut egestas tincidunt. Ut faucibus turpis nisl, tincidunt ultricies est cursus in. Cras erat leo, fermentum quis eros quis, pretium faucibus enim.</p>
+
+ <h2>Décimo Paragrafo</h2>
+ <p>Nulla ac turpis eu eros laoreet porta non sit amet lectus. Praesent commodo ultrices neque at consectetur. Pellentesque venenatis lectus ipsum, vitae imperdiet ligula efficitur vel. Maecenas tempor felis eu ex dignissim ullamcorper eu sit amet odio. Mauris porta vestibulum euismod. Nulla placerat laoreet diam, ultricies porttitor dolor ultrices in. Sed non turpis ac dui lacinia finibus. Aliquam in scelerisque tellus, et pulvinar nisi. Proin in arcu eros. Pellentesque scelerisque sed dolor ullamcorper pretium. Duis eu varius ligula. Phasellus eget dolor quis elit lobortis consequat vitae non tellus. Sed arcu metus, pulvinar ac volutpat non, mattis et tortor. Suspendisse varius lectus commodo scelerisque aliquam. In convallis tempus imperdiet.</p>
+</main>
+    </body>
+</html>
